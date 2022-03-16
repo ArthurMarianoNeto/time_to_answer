@@ -1,0 +1,10 @@
+{
+  "name": "time_to_answer",
+  "private": true,
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ArthurMarianoNeto/time_to_answer.git",
+  "author": "Arthur Mariano <thiesto@gmail.com>",
+  "license": "MIT"
+}
