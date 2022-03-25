@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 gem 'devise'
 gem 'rails-i18n', '~> 7.0.0'
 gem 'tty-spinner'
+gem 'faker'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -73,4 +74,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'spring'
+  gem 'awesome_print'
 end
