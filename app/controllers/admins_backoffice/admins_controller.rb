@@ -4,6 +4,6 @@ class AdminsBackoffice::AdminsController < ApplicationController
   end
 
   def edit
-    # def new
+    @Admin = Admins.find(params[:id])
   end
 end
