@@ -12,6 +12,7 @@
 
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+
   <%= stylesheet_link_tag    'application' %>
   <%= stylesheet_link_tag    'admins_backoffice' %>
 
@@ -112,6 +113,7 @@
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'admins_backoffice' %>
+
     <% if notice %>
         <%= javascript_tag do %>
             $.bootstrapGrowl('<%= notice %>', {
@@ -126,3 +128,4 @@
 </body>
 
 </html>
+

@@ -1,0 +1,3 @@
+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
+
+$ bundle update mimemagic

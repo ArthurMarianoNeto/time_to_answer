@@ -2,7 +2,11 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
   before_action :set_subject, only: [:edit, :update, :destroy]
 
   def index
-    @subjects = Subject.all.order(:description).page(params[:page])
+    respond_to do |format|
+      format.html { @subjects = Subject.all.order(:description).page(params[:page]) }
+      format.pdf  { @subjects = Subject.all.order(:description) }
+      format.json { @subjects = Subject.all.order(:description) }
+    end
   end
 
   def new
@@ -47,3 +51,4 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
     @subject = Subject.find(params[:id])
   end
 end
+

@@ -1,3 +1,3 @@
 class Subject < ApplicationRecord
-    has_many :questions
-  end
+  has_many :questions
+end
